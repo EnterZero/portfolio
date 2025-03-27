@@ -6,7 +6,7 @@
 :root {
   --black: #0e0e10;
   --grey-dark: #18181b;
-  --grey: #1f1f23;
+  --grey-normal: #1f1f23;
   --grey-light: #33333a;
   --white: #efeff1;
   --shadow: 0 0.4rem 0.8rem #0006, 0 0 0.4rem #0006;
@@ -30,7 +30,8 @@ header {
   height: 5vh;
   position: fixed;
   top: 1rem;
-  right: 1rem;
+  right: 50%;
+  transform: translate(50%, 0);
   background-color: var(--grey-dark);
   border-radius: 0.5rem;
   box-shadow: var(--shadow);
@@ -103,12 +104,12 @@ section {
 .logo {
   width: 100%;
   height: 90%;
-  background: url('./media/background.jpg') center/cover no-repeat;
+  background: url('./media/background.jpg') center/cover no-repeat fixed;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
 
-.github {
+.banner {
   width: 100%;
   height: 10%;
   background-color: var(--grey-dark);
@@ -118,4 +119,16 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.tba {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
 }
