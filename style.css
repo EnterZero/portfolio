@@ -42,12 +42,22 @@ nav {
   height: 100%;
 }
 
-ul {
+.flexX {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.flexY {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 li {
@@ -121,12 +131,29 @@ section {
   align-items: center;
 }
 
-.tba {
+.container {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.ct-banner {
+  width: 50%;
+  height: 10%;
+  background-color: var(--grey-normal);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+}
+
+.ct-banner:hover {
+  background-color: var(--grey-light);
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
 }
 
 .hidden {
