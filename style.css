@@ -147,13 +147,19 @@ section {
   box-shadow: var(--shadow);
 }
 
-.ct-banner:hover {
+.ct-banner:hover,
+.ct-banner:active {
   background-color: var(--grey-light);
 }
 
 a {
   color: var(--white);
   text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .hidden {
