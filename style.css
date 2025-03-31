@@ -139,6 +139,25 @@ section {
   align-items: center;
 }
 
+.container-sub {
+  width: 90%;
+  height: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skill {
+  width: 20%;
+  height: 20%;
+  background-color: var(--grey-normal);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .ct-banner {
   width: 50%;
   height: 10%;
